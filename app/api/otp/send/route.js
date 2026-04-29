@@ -42,7 +42,7 @@ export async function POST(request) {
       accountSid !== "your_account_sid_here"
     ) {
       await client.messages.create({
-        body: `Your OTP for login is: ${otp}`,
+        body: `This verification code is sent from Ganesh Thakur's Otp app. Your OTP for login is: ${otp}`,
         from: twilioPhoneNumber,
         to: phone,
       });
